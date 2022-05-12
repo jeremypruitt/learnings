@@ -1,8 +1,9 @@
 # Add Two Numbers
 
-Language: Python 3
-Runtime: 45ms
 Link: https://leetcode.com/problems/add-two-numbers/
+Language: Python 3
+Runtime: 84 ms, faster than 59.53% of Python3 online submissions for Add Two Numbers.
+Memory Usage: 13.9 MB, less than 87.34% of Python3 online submissions for Add Two Numbers.
 
 ```bash
 # Definition for singly-linked list.
