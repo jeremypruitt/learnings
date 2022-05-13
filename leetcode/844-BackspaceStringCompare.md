@@ -1,4 +1,4 @@
-# Backspace String Compare
+# 588 - Backspace String Compare
 
 Link: https://leetcode.com/problems/backspace-string-compare/
 Language: Python 3
