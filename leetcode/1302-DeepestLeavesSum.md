@@ -9,12 +9,12 @@
 | Runtime | 233 ms, faster than 79.40% of Python3 online submissions for Deepest Leaves Sum
 | Memory Usage | 17.8 MB, less than 66.46% of Python3 online submissions for Deepest Leaves Sum
 | Datastructures | deque OR list/queue
-| Algorithms | DFS OR BFS
+| Algorithms | BFS (can also use DFS w/ stack)
 
 ### Procedure
 
 1. Create queue for next level and add the root node to it
-2. While the queue contains item(s)...
+2. BFS - While the queue contains item(s)...
    1. Set this level to the current content of next_level
    2. Reset next level to empty queue
    3. For every node in the this current level
