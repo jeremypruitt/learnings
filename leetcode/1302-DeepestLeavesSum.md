@@ -15,9 +15,9 @@
 
 1. Create queue for next level and add the root node to it
 2. While the queue contains item(s)...
-   3. Set this level to the current content of next_level
-   4. Reset next level to empty queue
-   5. For every node in the this current level
+   1. Set this level to the current content of next_level
+   2. Reset next level to empty queue
+   3. For every node in the this current level
       1. If there's a left node then add it the queue for next level
       2. If there's a left node then add it the queue for next level
 3. Return the sum of all node values in this level (the last level)
