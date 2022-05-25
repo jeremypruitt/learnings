@@ -11,9 +11,6 @@
 | Datastructures | str, int
 | Algorithms | loop and count
 
-Runtime: .
-Memory Usage: .
-
 ### Procedure
 
 1. TBD...
