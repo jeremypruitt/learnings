@@ -22,7 +22,6 @@
 
 ```python
 class WordFilter:
-
     def __init__(self, words: List[str]):
         self.cache = {}
         for weight, word in enumerate(words):
@@ -34,9 +33,9 @@ class WordFilter:
 ```
 
 #### Option 3: Three For Loops
+
 ```python
 class WordFilter:
-
     def __init__(self, words: List[str]):
         self.cache = {}
         for weight, word in enumerate(words):
@@ -46,4 +45,27 @@ class WordFilter:
 
     def f(self, prefix: str, suffix: str) -> int:
         return self.cache.get(prefix+"."+suffix, -1)
+```
+
+#### Option 3: One-Liner
+
+```python
+class WordFilter:
+    def __init__(self, words: List[str]):
+        W = ' '.join(w + '=' + w for w in words[::-1])
+        self.f = lambda p, s: W.count('=', W.find(s + '=' + p)) - 1
+```
+
+#### Option 4: Expanded One-Liner
+
+```python
+class WordFilter:
+    def __init__(self, words):        
+        self.cache = []
+        for word in reversed(words):
+            self.cache.append(word+'.'+word) 
+        self.cache = ' '.join(self.cache)
+    
+    def f(self, prefix, suffix):
+        return self.cache.count('.', self.cache.find( suffix+'.'+prefix ))-1
 ```
