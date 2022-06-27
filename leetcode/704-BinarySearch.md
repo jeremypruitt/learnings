@@ -9,7 +9,8 @@
 | Runtime | 263 ms, faster than 82.93% of Python3 online submissions for Binary Search
 | Memory Usage | 15.5 MB, less than 71.63% of Python3 online submissions for Binary Search
 | Datastructures | List[int]
-| Algorithms | Two Pointer
+| Algorithms | Binary Search (with two pointers)
+| Complexity | Time: O(NlogN), Space: O(1)
 
 ### Procedure
 
