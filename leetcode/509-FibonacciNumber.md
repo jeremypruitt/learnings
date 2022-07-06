@@ -14,11 +14,24 @@
 
 ### Procedure
 
+#### Option 2: Iterative
+
 1. Loop n times
 2. A becomes B, and B becomes A+B
 3. When we get to end, A contains the answer
 
 ### Code
+
+#### Option 1: Recursion
+
+```python
+class Solution:
+    def fib(self, n: int) -> int:
+        if n <= 1: return n
+        return self.fib(n-1) + self.fib(n-2)
+```
+
+#### Option 2: Iterative
 
 ```python
 class Solution:
