@@ -9,8 +9,8 @@
 | Runtime | 787 ms, faster than 27.16% of Python3 online submissions for Word Abbreviation
 | Memory Usage | 65.2 MB, less than 14.57% of Python3 online submissions for Word Abbreviation
 | Datastructures | List[List[int]]
-| Algorithms | DFS (postorder)
-| Complexity | Time: O(NlogN) Memory: O(M) (C=number of characters in all words in array)
+| Algorithms | Min Heap
+| Complexity | Time: O(Z+Klog(X)) Memory: O(X) (X=min(K,N))
 
 ### Procedure
 
