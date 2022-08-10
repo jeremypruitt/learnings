@@ -30,10 +30,6 @@ class Solution:
         def dfs(left,right):
             if left > right: return None
             mid = (left+right) // 2
-            node = TreeNode(nums[mid])
-            node.left  = dfs(left,  mid-1)
-            node.right = dfs(mid+1, right)
-            return node
-        
+            return TreeNode(nums[mid], dfs(left, mid - 1), dfs(mid+1, right))
         return dfs(0, len(nums)-1)
 ```
