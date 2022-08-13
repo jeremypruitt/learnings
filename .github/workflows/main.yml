@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync LeetCode Today Problem
-        uses: spencercjh/sync-leetcode-today-problem@<latest version>
+        uses: spencercjh/sync-leetcode-today-problem@0.v.3
         with:
           language: Python3
