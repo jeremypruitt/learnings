@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs at 5:05 PST
-    - cron: "35 3 * * *"
+    - cron: "5 0 * * *"
 
 jobs:
   sync_leetcode_today_record_job:
