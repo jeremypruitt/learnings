@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: create daily practice issue action step
-        uses: xingorg1/leetcode-daily-practice-action@main
+        uses: jeremypruitt/leetcode-daily-practice-action@main
         with:
           token: ${{secrets.TOKEN}}
   sync_leetcode_today_record_job:
