@@ -15,9 +15,8 @@ jobs:
         uses: actions/checkout@v2
       - name: create daily practice issue action step
         uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
-        with:
-          token: ${{secrets.TOKEN}}
         env:
-          language: Python3
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_REPO_NAME: "swe-interview-prep"
           GITHUB_OWNER_NAME: "jeremypruitt"
