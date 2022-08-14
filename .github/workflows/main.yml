@@ -17,6 +17,7 @@ jobs:
         uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
         with:
           token: ${{secrets.TOKEN}}
+        env:
           language: Python3
           GITHUB_REPO_NAME: "swe-interview-prep"
           GITHUB_OWNER_NAME: "jeremypruitt"
