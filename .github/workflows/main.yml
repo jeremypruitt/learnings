@@ -16,6 +16,7 @@ jobs:
       - name: create daily practice issue action step
         uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
         env:
+          DEBUG: 1
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_REPO_NAME: "swe-interview-prep"
