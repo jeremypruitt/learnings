@@ -20,4 +20,4 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_REPO_NAME: "swe-interview-prep"
-          GITHUB_OWNER_NAME: "jeremypruitt"
+          GITHUB_REPO_OWNER: "jeremypruitt"
