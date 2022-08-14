@@ -14,14 +14,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: create daily practice issue action step
-        uses: jeremypruitt/leetcode-daily-practice-action@main
+        uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
         with:
           token: ${{secrets.TOKEN}}
-  sync_leetcode_today_record_job:
-    name: sync leetcode today problem job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Sync LeetCode Today Problem
-        uses: spencercjh/sync-leetcode-today-problem@0.4.3
-        with:
           language: Python3
+          GITHUB_REPO_NAME: "swe-interview-prep"
+          GITHUB_OWNER_NAME: "jeremypruitt"
