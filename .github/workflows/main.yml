@@ -19,5 +19,4 @@ jobs:
         uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
         env:
           DEBUG: 1
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          #GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
