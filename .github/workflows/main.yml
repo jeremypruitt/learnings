@@ -3,20 +3,17 @@ name: Sync LeetCode Today Problem
 on:
   workflow_dispatch:
   schedule:
-    # Runs at 17:20 PST
+    # Runs at 17:07 PST
     - cron: "7 0 * * *"
 
 jobs:
   create_leetcode_daily_practice_issue:
     runs-on: ubuntu-latest
-    name: create daily practice issue
+    name: Create Github issues for LC daily problem
     permissions:
       issues: write
     steps:
-      - name: Checkout
+      - name: Checkout the repository
         uses: actions/checkout@v2
-      - name: create daily practice issue action step
+      - name: Get daily LC problem and create new GitHub issue
         uses: jeremypruitt/gha-github-issue-for-leetcode-daily@master
-        env:
-          DEBUG: 1
-          #GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
