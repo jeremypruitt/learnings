@@ -18,6 +18,29 @@
 
 ### Code
 
+#### Option 0: Clean(er) Recursion
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def goodNodes(self, root: TreeNode) -> int:
+        if not root: return 0
+        self.count = 0
+
+        def dfs(node, val):
+            if node.val >= val: self.count += 1
+            if node.left: dfs(node.left, max(val, node.val))
+            if node.right: dfs(node.right, max(val, node.val))
+
+        dfs(root, root.val)
+        return self.count
+```
+
 #### Option 1: Recursion
 
 ```python
